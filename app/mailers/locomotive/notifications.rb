@@ -9,7 +9,7 @@ module Locomotive
       if Locomotive.config.multi_sites_or_manage_domains?
         @domain = entry.site.domains.first
       else
-        @domain = ActionMailer::Base.default_url_options[:host] || 'localhost'
+        @domain = Locomotive::Site.first.try(:name) || 'localhost'
       end
 
       subject = t('locomotive.notifications.new_content_entry.subject', domain: @domain, type: @type.name, locale: account.locale)

@@ -93,8 +93,8 @@ tr:
     notifications:
       new_content_entry:
         subject: "[%{domain}][%{type}] yeni kayıt"
-        title: "Selam %{name}, just to let you know that a yeni instance has been created on %{date} for the site <b>%{domain}</b>"
-        type: "Model: %{type}"
+        title: "Selam %{name}, bir kullanıcı tarafından %{date} tarihinde yeni bir içerik girildi."
+        type: "İçerik Tipi: %{type}"
 
     pagination:
       first: "&laquo;"
