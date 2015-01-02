@@ -1,0 +1,67 @@
+tr:
+  errors:
+    messages:
+      expired: "süresi sona erdi, lütfen yenisini isteyin"
+      not_found: "bulunamadı"
+      already_confirmed: "zaten onaylandı, lütfen tekrar giriş yapmayı deneyin"
+      not_locked: "kilitlenmedi"
+      not_saved:
+        one: "Bu %{resource} kaydedilirken 1 hata yakalandı:"
+        other: "Bu %{resource} kaydedilirken %{count} hata yakalandı:"
+
+  devise:
+    failure:
+      locomotive_account:
+        unauthenticated: 'Devam etmeden önce kayıt olmanız veya giriş yapmanız gerekmektedir.'
+        unconfirmed: 'Devam etmeden önce hesabınızı onaylamalısınız.'
+        locked: 'Hesabınız kilitlendi.'
+        invalid: 'Geçersiz email veya parola.'
+        invalid_token: 'Geçesiz onaylama kodu.'
+        timeout: 'Oturumunuz sona erdi. Devam etmek için lütfen giriş yapın.'
+        inactive: 'Hesabınız henüz etkinleştirilmedi.'
+        not_found_in_database: 'Geçersiz email veya parola..'
+        no_membership: 'Üyeliğin yok.'
+    sessions:
+      locomotive_account:
+        signed_in: 'Başarılı giriş.'
+        signed_out: 'Başarılı çıkış.'
+    passwords:
+      locomotive_account:
+        send_instructions: 'Bir kaç dakika içinde parolanızı nasıl sıfırlayacağız hakkında bir email alacaksınız.'
+        updated: 'Parolanız başarıyla değiştirildi. Şu anda giriş yapmış bulunuyorsunuz.'
+    confirmations:
+      locomotive_account:
+        send_instructions: 'Bir kaç dakika içinde hesabınızı onaylama hakkında bir email alacaksınız.'
+        confirmed: 'Hesabınız başarıyla onaylandı. Şu anda giriş yapmış bulunuyorsunuz.'
+    registrations:
+      locomotive_account:
+        signed_up: 'Hoşgeldiniz! Kaydınız başarıyla tamamlandı.'
+        updated: 'Hesabınızı başarıyla güncellediniz.'
+        destroyed: 'Güle güle! Hesabınız başarıyla kapatıldı. Sizi yakında tekrar görmeyi ümit ediyoruz.'
+    unlocks:
+      locomotive_account:
+        send_instructions: 'Bir kaç dakika içinde hesabınızın kilitini nasıl kaldıracağınız hakkında bir email alacaksınız.'
+        unlocked: 'Hesabınız başarıyla açıldı. Şu anda giriş yapmış bulunuyorsunuz.'
+    mailer:
+      locomotive_account:
+        confirmation_instructions: 'Onaylama talimatları'
+        reset_password_instructions: 'Parola sıfırlama talimatları'
+        unlock_instructions: 'Kilit açma talimatları'
+
+  locomotive:
+    devise_mailer:
+      common:
+        hello: Merhaba
+
+      confirmation_instructions:
+        you_can_confirm_your_account_through_the_link_below: "Aşağıdaki link ile hesabını onaylayabilirsin:"
+        confirm_my_account: "Hesabımı onayla"
+      reset_password_instructions:
+        reset_password_instruction: "Aşağıdaki link ile parolanızı değiştirebilirsiniz:"
+        change_my_password: "Parolamı değiştir"
+        wrong_request_instruction: "Eğer bunu siz istemediyseniz görmezden gelin."
+        unchange_password_message: "Aşağıdaki linke tıklamazsanız ve şifrenizi değiştirmezseniz şifreniz değişmeyecektir."
+      unlock_instructions:
+        locked_account_message: "Hesabınız kilitlenmiştir."
+        unlock_account_instruction: "Kilidi açmak için linke tılayın:"
+        unlock_my_account: "Hesabımın kilidini aç"

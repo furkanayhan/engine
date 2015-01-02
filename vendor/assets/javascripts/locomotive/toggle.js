@@ -49,9 +49,9 @@
     }, settings);
 
     // FIXME (Didier Lafforgue) it works but it doesn't scale if we handle another locale
-    if (typeof window.locale != 'undefined' && window.locale == 'fr') {
-      settings.on_label = 'Oui';
-      settings.off_label = 'Non';
+    if (typeof window.locale != 'undefined' && window.locale == 'tr') {
+      settings.on_label = 'Evet';
+      settings.off_label = 'Hayır';
     }
 
     function showUncheckedState(element) {

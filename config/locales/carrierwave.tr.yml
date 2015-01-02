@@ -1,0 +1,4 @@
+tr:
+  carrierwave:
+    errors:
+      integrity: 'izin verilen bir dosya tipi değil.'

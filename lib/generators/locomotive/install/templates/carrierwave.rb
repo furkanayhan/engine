@@ -15,9 +15,10 @@ CarrierWave.configure do |config|
       provider:                 'AWS',
       aws_access_key_id:        ENV['S3_KEY_ID'],
       aws_secret_access_key:    ENV['S3_SECRET_KEY'],
-      region:                   ENV['S3_BUCKET_REGION']
+      region:                   'eu-west-1',
+      endpoint:                 'https://s3-eu-west-1.amazonaws.com'
     }
-    config.fog_directory    = ENV['S3_BUCKET']
+    config.fog_directory    = 'hostingassets/....'
 
   else
     # settings for the local filesystem

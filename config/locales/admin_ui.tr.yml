@@ -1,0 +1,378 @@
+tr:
+  locomotive:
+    buttons:
+      login: Giriş
+      send_password: Gönder
+      change_password: Güncelle
+      new_item: "+ ekle"
+      switch_to_site: Git
+      delete: "Sil"
+      close: "Kapat"
+
+    locales:
+      en: English
+      de: German
+      fr: French
+      pl: Polish
+      pt-BR: "Brazilian Portuguese"
+      it: Italian
+      nl: Dutch
+      nb: Norwegian
+      es: Spanish
+      ru: Russian
+      et: Estonian
+      ja: Japanese
+      zh-CN: Chinese
+      cs: Czech
+      bg: Bulgarian
+      sk: Slovak
+      sr: Serbian
+      tr: Türkçe
+
+    messages:
+      confirm: Emin misiniz ?
+      sending_form: Form gönderiliyor
+
+    shared:
+      header:
+        welcome: Hoş geldiniz, %{name}
+        account: Hesap ayarları
+        see: Website'yi gör
+        switch: Diğer siteye geç
+        help: Yardım
+        logout: Çıkış
+      sidebar:
+        dashboard: Panel
+        assets: Ekler
+        settings: Genel Ayarlar
+      menu:
+        contents: İçerikler
+        assets: Ekler
+        settings: Ayarlar
+        pages: Sayfalar
+        snippets: Parçalar
+        account: Hesabım
+        site: Site
+        theme_assets: Tema dosyaları
+        translations: Çeviriler
+      form:
+        change_file: değiştir
+        delete_file: sil
+        cancel: iptal
+        file_input:
+          none: dosya yok
+          choose: Seç
+          change: Değiştir
+          delete: Sil
+          cancel: İptal
+        array_input:
+          new: Yeni
+          add: Ekle
+          edit: Düzenle
+      form_actions:
+        back: Kaydetmeden çık
+        create: Oluştur
+        update: Kaydet
+        send: Gönder
+        disable_with: Bekliyor...
+      list:
+        untranslated: çevirilmemiş
+      footer:
+        who_is_behind: ""
+
+    errors:
+      "500":
+        title: Uygulama hatası
+        notice: "Üzgünüz birşeyler ters gitti."
+        link: "&rarr; Uygulamaya dön"
+      "404":
+        title: Sayfa bulunamadı
+        notice: "İstediğiniz sayfa bulunamadı"
+        link: "&rarr; Uygulamaya dön"
+
+    notifications:
+      new_content_entry:
+        subject: "[%{domain}][%{type}] yeni kayıt"
+        title: "Selam %{name}, just to let you know that a yeni instance has been created on %{date} for the site <b>%{domain}</b>"
+        type: "Model: %{type}"
+
+    pagination:
+      first: "&laquo;"
+      last: "&raquo;"
+      previous: "&lsaquo;"
+      next: "&rsaquo;"
+      truncate: "&hellip;"
+
+    sites_picker:
+      new: + yeni site
+
+    not_logged_in:
+      title: "Giriş <small>giriş yapın</small>"
+
+    api_key:
+      none: Yeni bir API anahtarı için bir sonraki butona basınız..
+      button: Tekrar oluştur
+
+    custom_fields:
+      edit:
+        title: Özel alanı düzenleme
+      text_formatting:
+        none: None
+        html: HTML
+      types:
+        file:
+          delete_file: Dosya sil
+        has_many:
+          empty: Liste boş
+          new_entry: + Yeni kayıt ekle
+        many_to_many:
+          empty: Liste boş. Aşağıdaki menüden yeni bir kayıt ekle.
+
+      form:
+        required: Gerekli
+        default_label: Alan adı
+        select_options:
+          ask_name: "Seçeneğin etiketini yazın"
+
+    sessions:
+      new:
+        title: "Giriş"
+        link: "Şifremi unuttum"
+        email: "E-posta"
+        password: "Şifre"
+
+    passwords:
+      new:
+        title: Şifremi unuttum
+        link: "&rarr; Giriş sayfasına dön"
+        email: "E-posta adresin"
+      edit:
+        title: Şifremi güncelle
+        link: "&rarr; Giriş sayfasına dön"
+        password: "Yeni şifren"
+        password_confirmation: "Yeni şifreni onayla"
+
+    pages:
+      index:
+        title: Sayfalar
+        help: "Sayfalar ağaç şeklindedir."
+        no_items: "Henüz bir sayfa yok. Oluşturmak için <a href=\"%{url}\">buraya</a> tıklayın."
+        new: yeni sayfa
+        new_content_entry: "Yeni %{name}"
+        latest_entries: Son sayfalar
+      new:
+        title: yeni sayfa
+        help: "Sayfanızı oluşturmak için aşağıdakileri doldurun. Dikkatli olun, sayfa varsayılan olarak yayında olmaz."
+      page:
+        updated_at: düzenlendi
+      edit:
+        show: göster
+        help: "Sayfa başlığı üzerine tıklanarak düzenlenebilir. Değişikliklerinizi onaylamak için, \"Kaydet\" butonuna tıklayın."
+        ask_for_title: "Yeni sayfa başlığını girin"
+      form:
+        change_file: değiştir
+        delete_file: sil
+        cancel: iptal
+        default_block: Varsayılan
+        cache_strategy:
+          none: Hiçbiri
+          simple: Basit
+          hour: 1 saat
+          day: 1 gün
+          week: 1 hafta
+          month: 1 ay
+        redirect_type:
+          permanent: "Permanent (301)"
+          temporary: "Temporary (302)"
+
+    snippets:
+      index:
+        title: Parçalar
+        help: "Parçalar HTML kodunun bir kısmıdır, sitenin farklı alanlarında kullanılabilirler (footer, header gibi)."
+        no_items: "Şu an hiç parça yok. Oluşturmak için <a href=\"%{url}\">buraya</a> tıklayın."
+        new: yeni parça
+      new:
+        title: yeni parça
+        help: "Parçayı güncellemek için formu doldurun."
+      edit:
+        title: Parçayı düzenle
+        help: "Bu parçayı şu kod ile direk ekleyebilirsiniz : <span class='code'>{% include '%{slug}' %}</span>."
+      snippet:
+        updated_at: düzenle
+
+    sites:
+      index:
+        title: Site seçin
+      new:
+        title: yeni site
+        help: "İlk sitenizi oluşturmak için aşağıdakileri doldurun."
+
+    current_site:
+      edit:
+        title: Varolan siteyi düzenle
+        new_membership: hesap ekle
+        ask_for_name: "Yeni site ismini girin"
+
+    memberships:
+      roles:
+        admin: Admin
+        designer: Tasarımcı
+        author: Yazar
+      new:
+        title: yeni üye
+        help: "Hesap eklemek için e-posta girin."
+
+    accounts:
+      new:
+        title: yeni hesap
+        help: "Yeni hesap için aşağıdakileri doldurun."
+
+    my_account:
+      edit:
+        title: Hesabımı düzenle
+        new_site: yeni site
+        ask_for_name: "Yeni isminizi girin"
+
+    theme_assets:
+      index:
+        title: Tema dosyaları
+        help: "Eğer resim galerisi oluşturmak isterseniz burası yerine model oluşturmayı deneyin."
+        quick_upload: Hızlı yükle
+        new: yeni dosya
+        snippets: Parçalar
+        css_and_js: CSS ve javascript
+        fonts: Fontlar
+        images: Resimler
+        media: Medyalar
+        no_items: "Şu an hiç dosya yok."
+      asset:
+        updated_at: düzenlendi
+      new:
+        title: yeni dosya
+        help: "CSS ve javascript için seçenekleriniz; kopyala yapıştır ile ekleme veya dosya yükleme."
+      edit:
+        title: "Düzenleniyor %{file}"
+        help: "Bu dosya şuradan direk ulaşılabilir: <a href='%{url}'>%{url}</a>"
+        help_image: "Bu resmi şu kod ile direk ekleyebilirsiniz : <span class='code'>{{ '%{path}' | theme_image_tag }}</span>.<br/>Your current image dimensions : <b>%{width}px x %{height}px</b>.<br/>"
+        help_javascript: "Bu javascripti şu kod ile direk ekleyebilirsiniz : <span class='code'>{{ '%{path}' | javascript_tag }}</span>.<br/>"
+        help_stylesheet: "Bu css'i şu kod ile direk ekleyebilirsiniz : <span class='code'>{{ '%{path}' | stylesheet_tag }}</span>.<br/>"
+      form:
+        picker_link: Koda bir dosya ekle
+        choose_file: Dosya seç
+        choose_plain_text: Düz metin seç
+      image_picker:
+        title: "Tema resmi ekle"
+        no_items: "Hiç resim yok."
+        upload: "Tema resimleri yükle"
+
+    translations:
+      untranslated: "Çevirilmemiş diller: %{list}"
+      index:
+        title: Çeviriler
+        new: yeni çeviri
+        no_items: "Şu an hiç çeviri yok. Eklemek için <a href=\"%{url}\">buraya</a> tıklayın."
+        remove: Kaldır %{key}
+      new:
+        title: "yeni çeviri"
+        help: "Sayfalar/parçalar tüm diller için aynı şablonu paylaşabilirler. Şunun haricinde: <b>translate</b> liquid tag."
+      edit:
+        title: "Düzenleniyor %{key}"
+        help: "Çeviri anahtarını şu şekilde kullanabilirsin : <span class='code'>{{ '%{key}' | translate }}</span>."
+
+    content_assets:
+      picker:
+        title: "Medya ekle"
+        no_items: "Şu an hiç medya yok"
+        upload: "Medya yükle"
+        placeholder_search: Dosya ismi ile ara
+        types:
+          pdf: PDF'ler
+          image: resimler
+          media: zengin medya
+          others: diğerleri
+
+    content_types:
+      index:
+        title: Modeller
+        new: yeni model
+        edit: modeli düzenle
+      new:
+        title: yeni model
+        help: "Kendi modelini oluştur (Projects, People, ...gibi). İngilizce ve çoğul olarak oluşturmalısın."
+      edit:
+        title: Model düzenleme
+        help: "Model en az bir alana sahip olmalıdır."
+        show_entries: kayıtları göster
+        new_entry: yeni kayıt
+      form:
+        order_by:
+          created_at: 'Oluşturma tarihine göre'
+          updated_at: 'Düzenlenme tarihine göre'
+          position_in_list: Elle
+        order_direction:
+          asc: Artan
+          desc: Azalan
+
+    content_entries:
+      index:
+        title: 'Listeleniyor: "%{type}"'
+        edit: modeli düzenle
+        destroy: modeli sil
+        download: Kayıtları indir
+        new: yeni kayıt
+        category_noname: "İsimsiz"
+        latest_entries: "Son kayıtlar"
+        updated_at: "Düzenlendi"
+      list:
+        no_items: "Şu anda hiç kayıt yok. Oluşturmak için <a href=\"%{url}\">buraya</a> tıklayın."
+      new:
+        title: '%{type} &mdash; yeni kayıt'
+      edit:
+        title: '%{type} &mdash; kayıdı düzenle'
+      form:
+        edit_select_options: seçenekleri düzenle
+        has_many:
+          new_entry: yeni kayıt
+
+    code_editing:
+      image_picker: Resimi koda yerleştir
+      copy_template: Ana yerden şablonu kopyala
+
+    cross_domain_sessions:
+      new:
+        title: Cross-domain doğrulama
+        notice: Websiteye saniyeler içerisinde yönlendirileceksiniz.
+
+    installation:
+      common:
+        title: İlk Oluşturma Aşaması
+        next: İleri
+      step_1:
+        title: "Adım 1/2 &mdash; Hesap oluştur"
+        name: Hesap ismi
+        email: E-posta
+        password: Şifre
+        password_confirmation: Şifre onayı
+        done: "Bir hesabın var:<br/><strong>%{name}</strong>, <em>%{email}</em>"
+        next: Hesap oluştur
+      step_2:
+        title: "Adım 2/2 &mdash; İlk siteni oluştur"
+        explanations: "Sitenin adını ve dilini belirle."
+        default_site_locale: Site dili
+        default_site_locales_hints: Daha sonra başka diller de ekleyebilirsin.
+        next: Site oluştur
+
+    public:
+      pages:
+        show_toolbar:
+          statuses:
+            loading: "Yükleniyor...."
+            disabled: "Düzenleyici devre dışı"
+          labels:
+            save_changes: "Değişiklikleri kaydet: "
+            editing_mode: "Düzenleme modu: "
+            lang: "Dil: "
+          buttons:
+            back: Admin panele dön
+            confirm: Onayla
+            cancel: İptal

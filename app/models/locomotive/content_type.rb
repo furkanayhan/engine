@@ -40,6 +40,7 @@ module Locomotive
 
     ## named scopes ##
     scope :ordered, order_by(updated_at: :desc)
+    scope :ordered_by_name, order_by(name: :asc)
     scope :by_id_or_slug, ->(id_or_slug) {
       any_of({ _id: id_or_slug }, { slug: id_or_slug })
     }

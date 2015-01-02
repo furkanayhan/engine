@@ -1,0 +1,118 @@
+tr:
+  formtastic:
+    titles:
+      information: Genel bilgiler
+      advanced_options: Gelişmiş seçenekler
+      meta: SEO Metadata
+      seo: SEO ayarları
+      robots_txt: Robots.txt dosyası
+      code: Kod
+      raw_template: Şablon
+      credentials: Kimlik Bilgileri
+      language: Dil
+      sites: Siteler
+      access_points: Erişim noktaları
+      memberships: Hesaplar
+      membership_email: Hesap e-posta
+      file: Dosya
+      preview: Önizleme
+      options: Gelişmiş seçenekler
+      custom_fields: Özel alanlar
+      other_fields: Diğer bilgiler
+      presentation: Sunumlar
+      attributes: Nitelikler
+      upload: Yükle
+      api: API
+    labels:
+      theme_asset:
+        plain_text_name: Dosya ismi
+        content_type: Dosya tipi
+        new:
+          source: Dosya
+        edit:
+          source: Dosyayı değiştir
+      custom_fields:
+        field:
+          name: Takma ad
+      content_type:
+        raw_item_template: Birim şablonu
+        public_submission_enabled: Açık sunum
+        public_submission_accounts: Onaylanmış Hesaplar
+        "custom_fields/field":
+          select_options: "Seçenekler"
+      content_entry:
+        _slug: Permalink
+        _visible: Görünebilir
+      account:
+        api_key: API anahtarı
+        edit:
+          locale: UI Dili
+          password: Yeni şifre
+          password_confirmation: Yeni şifre onayı
+      page:
+        seo_title: Başlık
+        target_klass_name: Model
+      site:
+        locales: Diller
+        timezone_name: Zaman dilimi
+        new:
+          locales: İlk dil
+
+    hints:
+      page:
+        handle: "Unique identifier to retrieve this page within an external controller instance"
+        published: "Only authenticated accounts can view unpublished pages."
+        cache_strategy: "Cache the page for better performance. The 'Simple' choice is a good compromise."
+        templatized: "Use the page as a template for a model you defined."
+        listed: "Control whether to show the page from generated menus."
+        target_klass_name: "The type of content this page will be a template for."
+        seo_title: "Seo için bir başlık belirleyin."
+        meta_keywords: "Overrides the site's meta keywords used within the head tag of the page. They are separated by a comma."
+        meta_description: "Değiştirmek istediğiniz bir meta açıklama belirleyin."
+      snippet:
+        slug: "You need to know it in order to insert the snippet inside a page"
+      site:
+        locales: "Drag&drop a flag to the first position to make it the default one."
+        seo_title: "Seo için bir başlık belirleyin."
+        meta_keywords: "Meta keywords used within the head tag of the page. They are separated by a comma. Required for SEO."
+        meta_description: "Seo için bir meta açıklama belirleyin."
+        robots_txt: "Content of the <span class='code'>/robots.txt</span> file. Check the following <a href='http://www.w3.org/TR/html4/appendix/notes.html#h-B.4.1.1'>url</a> for more information."
+        domains: "Simply add your domains just below. <b>Do not forget to upgrade your DNS.</b>"
+        memberships: "You can invite other accounts to edit/manage the site."
+        new:
+          locales: "You can add other languages once your site will be created."
+      theme_asset:
+        slug: "You do not need to add the extension file (.css or .js)"
+        edit:
+          source: "You can replace it by a file of the same extension"
+      translation:
+        key: "Do not use dash but underscore instead. Example: welcome_message."
+      asset:
+        source: "All file types are accepted."
+        edit:
+          source: "The current file is available here %{url}"
+        update:
+          source: "The current file is available here %{url}"
+      content_entry:
+        _slug: "Bu bölüm manuel olarak değiştirilmez, otomatik oluşturulur. (ex: \"template_page/{{ your_object._permalink }})\"."
+        _visible: "Bu içeriğin görünüp görünmeyeceğini belirleyin."
+        seo_title: "Seo için bir başlık belirleyin."
+        meta_keywords: "Overrides the site's meta keywords used within the head tag of the page. They are separated by a comma."
+        meta_description: "Seo için bir meta açıklama belirleyin."
+      import:
+        source: "A zipfile containing a database.yml along with assets and templates"
+        samples: "If enabled, the import process will also copy contents and assets"
+        reset: "If enabled, all the data of your site will be destroyed before importing the new site"
+      content_type:
+        name: "We suggest you to type the plural form of the model. Ex: Projects, Recipes, Posts, Articles, ...etc"
+        slug: "It will be used as the name of the collection in the liquid templates. Ex: <span class='code'>{{ contents.my_projects }}</span>"
+        raw_item_template: "You can customize the text displayed for each item in the list. Simply use Liquid. Ex: <span class='code'>{{ entry.name }})</span>"
+        public_submission_enabled: "It is used to let people from outside to create new entries (example: messages in a contact form)"
+        public_submission_accounts: "If the public submission option is enabled and for each entry created, sends a notification email to the accounts listed above."
+        "custom_fields/field":
+          name: "Name of the property for liquid templates. Ex: <span class='code'>&#123;&#123; your_object.&lt;name_of_your_field&gt; &#125;&#125;</span>"
+          hint: "Text displayed in the model form just below the field"
+
+    placeholders:
+      site:
+        domains: "Örnek: mysite.com"

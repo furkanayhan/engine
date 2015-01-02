@@ -13,13 +13,13 @@ module Locomotive
       enable_logs:            false,
       enable_admin_ssl:       false,
       delayed_job:            false,
-      default_locale:         :en,
+      default_locale:         :tr,
       mailer_sender:          'support@example.com',
       manage_subdomain:       false,
       manage_manage_domains:  false,
       ui:                     {
         latest_entries_nb:    5,
-        max_content_types:    2,
+        max_content_types:    15,
         per_page:             10
       },
       rack_cache:             {
