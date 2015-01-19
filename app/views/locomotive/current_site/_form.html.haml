@@ -13,6 +13,7 @@
   - if can?(:manage, current_site)
     = f.input :prefix_default_locale, as: :'Locomotive::Toggle', input_html: { class: 'simple-toggle' }
   = f.input :timezone_name, as: :select, include_blank: false, collection: options_for_site_timezones
+  = f.input :maintenance, as: 'select', include_blank: false, label: "Bakım Modu", collection: [["Açık", "true"], ["Kapalı", "false"]]
 
 - if can?(:point, Locomotive::Site)
   - if manage_subdomain_or_domains?

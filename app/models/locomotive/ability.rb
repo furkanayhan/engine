@@ -45,7 +45,12 @@ module Locomotive
       cannot :destroy, Page
       cannot :customize, Page
 
-      can :manage, [ContentEntry, ContentAsset, Translation]
+      can :manage, [ContentEntry, ContentAsset, Translation, Membership, Account]
+      cannot [:update, :destroy], Membership do |membership|
+        @membership.account_id == membership.account_id ||
+        membership.admin? ||
+        membership.account.email.include?("@idemama.com")
+      end
 
       can :touch, Site, _id: @site._id
 

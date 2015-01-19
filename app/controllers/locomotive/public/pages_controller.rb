@@ -6,6 +6,8 @@ module Locomotive
       include Locomotive::Render
       include Locomotive::ActionController::LocaleHelpers
 
+      before_filter :check_maintenance
+
       before_filter :require_site
 
       before_filter :authenticate_locomotive_account!, only: [:show_toolbar]
@@ -43,6 +45,12 @@ module Locomotive
         ::I18n.locale = ::Mongoid::Fields::I18n.locale
 
         self.setup_i18n_fallbacks
+      end
+
+      def check_maintenance
+        if current_site.maintenance
+          render template: '/locomotive/errors/maintenance', status: :service_unavailable, layout: false
+        end
       end
 
     end
