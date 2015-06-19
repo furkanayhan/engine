@@ -48,7 +48,7 @@ module Locomotive
       end
 
       def check_maintenance
-        if current_site.maintenance
+        if current_site.try(:maintenance)
           render template: '/locomotive/errors/maintenance', status: :service_unavailable, layout: false
         end
       end
