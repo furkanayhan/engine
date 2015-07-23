@@ -51,6 +51,7 @@ module Locomotive
         membership.admin? ||
         membership.account.email.include?("@idemama.com")
       end
+      cannot [:create, :destroy], Translation
 
       can :touch, Site, _id: @site._id
 
